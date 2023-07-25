@@ -1,7 +1,7 @@
 //! JSON query language parser.
 #![no_std]
 #![forbid(unsafe_code)]
-#![warn(missing_docs)]
+// #![warn(missing_docs)]
 
 extern crate alloc;
 
@@ -9,7 +9,7 @@ mod def;
 mod filter;
 mod path;
 mod prec_climb;
-mod token;
+pub mod token;
 
 use jaq_syn as syn;
 
