@@ -40,14 +40,14 @@
 //! ~~~
 #![no_std]
 #![forbid(unsafe_code)]
-#![warn(missing_docs)]
+// #![warn(missing_docs)]
 
 extern crate alloc;
 #[cfg(feature = "std")]
 extern crate std;
 
 mod error;
-mod filter;
+pub mod filter;
 mod lazy_iter;
 mod lir;
 mod mir;
